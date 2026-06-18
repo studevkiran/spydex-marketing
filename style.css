@@ -4,6 +4,14 @@
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ── ICON SYSTEM ── */
+svg.icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.15em; flex-shrink: 0; }
+.service-icon svg.icon, .sd-icon svg.icon { color: var(--navy); }
+.service-card:hover .service-icon svg.icon, .service-detail-card:hover .sd-icon svg.icon { color: white; }
+.ci-icon svg.icon, .why-feature-icon svg.icon, .hero-service-icon svg.icon { color: white; }
+.contact-strip-item svg.icon { width: 18px; height: 18px; color: var(--green); flex-shrink: 0; vertical-align: middle; }
+.blog-meta svg.icon { width: 14px; height: 14px; vertical-align: -0.1em; }
+
 :root {
   --navy:        #0d1f6e;
   --navy-dark:   #070f3a;
