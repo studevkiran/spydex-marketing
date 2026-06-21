@@ -189,6 +189,18 @@ document.getElementById('contactForm')?.addEventListener('submit', function(e) {
   }, 800);
 });
 
+// ── NEWSLETTER FORM (blog.html) ──
+const nlForm = document.getElementById('newsletterForm');
+if (nlForm) {
+  const nlInput = document.getElementById('newsletterEmail');
+  nlInput.addEventListener('focus', () => nlInput.style.borderColor = 'var(--green)');
+  nlInput.addEventListener('blur',  () => nlInput.style.borderColor = '');
+  nlForm.addEventListener('submit', e => {
+    e.preventDefault();
+    nlForm.innerHTML = '<p style="color:var(--green);font-weight:700;padding:14px">✓ You\'re subscribed! Welcome aboard.</p>';
+  });
+}
+
 // ── STAGGER REVEAL for grids ──
 document.querySelectorAll('.services-grid, .testimonials-grid, .portfolio-grid, .blog-grid, .why-right, .about-card-stack').forEach(grid => {
   [...grid.children].forEach((child, i) => {

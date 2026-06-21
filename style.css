@@ -486,6 +486,7 @@ a, button, input, select, textarea { cursor: none; }
 .blog-info p { font-size: 0.875rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 16px; }
 .blog-read { font-size: 0.82rem; font-weight: 700; color: var(--green); display: flex; align-items: center; gap: 6px; transition: gap var(--transition); }
 .blog-card:hover .blog-read { gap: 10px; }
+#newsletterEmail { flex:1;padding:14px 18px;border:1.5px solid var(--gray-200);border-radius:100px;font-size:0.95rem;outline:none;font-family:Inter,sans-serif;transition:border-color 0.2s; }
 
 /* ── CONTACT PAGE ── */
 .contact-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
